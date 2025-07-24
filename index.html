@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>Simple Timer</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container neumorphism">
+		<div class="left-side">
+			<h2 id="time">00:00</h2>
+			<div class="preset-buttons">
+				<button onclick="setPreset(180)">3分</button>
+				<button onclick="setPreset(240)">4分</button>
+				<button onclick="setPreset(300)">5分</button>
+			</div>
+		</div>
+		<div class="right-side">
+			<div class="digit-buttons">
+				<button onclick="appendDigit(1)">1</button>
+				<button onclick="appendDigit(2)">2</button>
+				<button onclick="appendDigit(3)">3</button>
+				<button onclick="appendDigit(4)">4</button>
+				<button onclick="appendDigit(5)">5</button>
+				<button onclick="appendDigit(6)">6</button>
+				<button onclick="appendDigit(7)">7</button>
+				<button onclick="appendDigit(8)">8</button>
+				<button onclick="appendDigit(9)">9</button>
+				<button onclick="startOrPause()">スタート</button>
+				<button onclick="appendDigit(0)">0</button>
+				<button id="resetButton" onclick="resetTimer()">リセット</button>
+			</div>
+		</div>
+	</div>
+	<p id="stopHint" class="stop-hint">クリック（またはタップ）でアラームを停止できます</p>
+	<audio id="alarmSound" src="sound/alert.mp3" preload="auto" loop></audio>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
