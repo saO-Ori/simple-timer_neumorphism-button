@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 30px 46px 32px;
+  padding: 48px 36px 46px 36px;
   width: 320px;
   max-width: 94vw;
   border-radius: 30px;
