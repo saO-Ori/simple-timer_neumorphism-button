@@ -61,7 +61,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
